@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isSeller, setIsSeller] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
-    <div className="fixed bg-white top-0 w-full z-50">
+    <div className="relative">
+      <div className="fixed bg-white top-0 w-full z-50 ">
       <div className=" flex justify-between items-center py-4 px-8 border-b-[1px] border-gray-light">
         <div className="logo">
           <Link to="/">
@@ -30,7 +32,7 @@ const Navbar = () => {
               <i class="ri-heart-3-line"></i>
               <h4 className="cursor-pointer ">Order</h4>
               <h4 className="text-green cursor-pointer">Become a Seller</h4>
-              <img src="dp.jpeg" className="h-10 w-10 rounded-full" alt="" />
+              <img onClick={() => setOpen(!open)} src="dp.jpeg" className="h-10 w-10 rounded-full" alt="" />
             </div>
           ) : (
             <div>
@@ -47,6 +49,14 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      {open ? (<div className="bg-white border rounded-md w-fit py-4 px-4 flex flex-col text-md text-gray-dark font-semibold absolute top-16 right-8">
+        <Link to="/mygigs"><span className="hover:text-black/50 cursor-pointer">gigs</span></Link>
+        <Link to="/add"><span className="hover:text-black/50 cursor-pointer">add new gig</span></Link>
+        <Link to="/orders"><span className="hover:text-black/50 cursor-pointer">orders </span></Link>
+        <Link to="/messages"><span className="hover:text-black/50 cursor-pointer">message</span></Link>
+        <Link to="/"><span className="hover:text-black/50 cursor-pointer">logout</span></Link>
+      </div>) : ""}
+    </div>
     </div>
   );
 };

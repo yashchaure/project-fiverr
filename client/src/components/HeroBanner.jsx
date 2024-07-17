@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroBanner = () => {
   return (
-    <div className="bg-green-dark  flex flex-col items-center justify-center m-8 rounded-2xl">
+    <div className="bg-green-dark  flex flex-col items-center justify-center rounded-2xl">
       <div className="w-[40%] mt-16">
         <h1 className="text-5xl text-white font-semibold text-center leading-snug">
           Find the right <span className="text-green">freelance</span> service, right away

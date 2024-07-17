@@ -9,12 +9,14 @@ const GigsList = () => {
         <Layout>
         <h1 className='text-2xl font-bold'>Explore Programming & Tech</h1>
         <div className='flex mx-4 gap-8 my-16 flex-wrap items-center justify-center'>
-            <Link to="/gig/:id"><GigCard/></Link>
-            <Link to="/gigs"><GigCard/></Link>
-            <Link to="/gigs"><GigCard/></Link>
-            <Link to="/gigs"><GigCard/></Link>
-            <Link to="/gigs"><GigCard/></Link>
-            <Link to="/gigs"><GigCard/></Link>
+            <Link to="/gig/123"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
+            <Link to="/gig"><GigCard/></Link>
             
         </div>
         </Layout>

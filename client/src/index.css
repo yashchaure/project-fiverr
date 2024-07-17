@@ -1,5 +1,42 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gigtable td,
+th {
+  border: 2px solid #222;
+  padding: 8px 16px;
+}
+
+.gigtable th {
+  text-align: start;
+}
+
+.gigtable tr:nth-child(even) {
+  background-color: #d5ffea;
+}
+
+
+.normal-input {
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 3rem;
+}
+
+.text-big {
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  height: 10rem;
+}
+
+.other-massage{
+  background-color: gray;
+
+}
+.self-massage{
+  background-color: green;
+}

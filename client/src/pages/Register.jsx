@@ -3,7 +3,11 @@ import Layout from '../components/Layout'
 
 const Register = () => {
   return (
-    <div>123</div>
+    <div>
+      <Layout>
+        123
+      </Layout>
+    </div>
   )
 }
 

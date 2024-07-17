@@ -5,12 +5,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ReviewSlides from "../components/ReviewSlides";
+import Layout from "../components/Layout";
 
 const GigPage = () => {
   return (
-    <div className="mt-32 mx-8 flex">
+    <div>
+      <Layout>
+      <div className="flex">
       <div className="w-[60%]">
-        <h1 className="text-3xl font-bold my-8">
+        <h1 className="text-3xl font-bold">
           I will design, redesign shopify store, shopify dropshipping store,
           shopify website
         </h1>
@@ -84,6 +87,8 @@ const GigPage = () => {
       </div>
 
       <div className="w-[40%]"></div>
+    </div>
+      </Layout>
     </div>
   );
 };
